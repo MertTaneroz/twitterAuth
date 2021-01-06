@@ -1,0 +1,26 @@
+<div class="toolbar-wrapper">
+
+    <a routerLink='/' class="toolbar-logo">Twitter</a>
+
+    <ul *ngIf="jwt; else elseBlock" class="toolbar-list">
+        <li class="toolbar-list-item">
+            <a routerLink='/login'>Login</a>
+        </li>
+        <li class="toolbar-list-item">
+            <a routerLink='/signin'>Sign In</a>
+        </li>
+    </ul>
+
+
+    <ng-template #elseBlock>
+        <ul class="toolbar-list">
+          <li class="toolbar-list-item">
+              <h1>Welcome : Username</h1>
+          </li>
+
+          <li class="toolbar-list-item">
+            <a href="#" (click)='logout($event)'>Logout</a>
+          </li>
+        </ul>
+    </ng-template>
+</div>

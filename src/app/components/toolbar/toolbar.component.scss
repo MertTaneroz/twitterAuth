@@ -1,0 +1,66 @@
+.toolbar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    background-color: slateblue;
+
+    .toolbar-logo {
+        color: white;
+        text-decoration: none;
+        padding: 15px 25px;
+        font-size: 30px;
+        transition: 200ms;
+        margin-left: 20px;
+
+        &:hover {
+            background-color: slategrey;
+            cursor: pointer;
+        }
+    }
+
+    .toolbar-list {
+        display: flex;
+        align-items: center;
+
+        .toolbar-list-item {
+            list-style-type: none;
+            display: flex;
+
+            a {
+                padding: 20px 15px;
+                font-size: 20px;
+                color: white;
+                text-decoration: none;
+                margin: 0 15px;
+                transition: 200ms;
+                display: flex;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: slategray;
+                }
+            }
+
+            h1 {
+                color: white;
+            }
+        }
+    }
+    button {
+        background-color: slateblue;
+        padding: 20px 15px;
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        transition: 200ms;
+        display: flex;
+        border: none;
+
+        &:hover {
+            cursor: pointer;
+            background-color: slategray;
+        }
+    }
+
+    
+}

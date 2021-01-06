@@ -1,0 +1,17 @@
+<div class="form-wrapper">
+    <div>
+        <label for="username">Username</label>
+        <input (input)="onChangeUsername($event)" type="text" id="username" placeholder="Enter your username" name="username">
+    </div>
+    <div>
+        <label for="email">Email</label>
+        <input (input)="onChangeEmail($event)" type="email" id="email" placeholder="Enter your email" name="email">
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input (input)="onChangePassword($event)" type="password" id="password" placeholder="Enter your password" name="password">
+    </div>
+    <div>
+        <button (click)="register()">Sing In</button>
+    </div>
+</div>
